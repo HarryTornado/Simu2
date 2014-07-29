@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="all" name="Interpreter">
+
+    <target name="init">
+        <property environment="env"/>
+        <property name="javacc_home" value="${env.JAVACC_HOME}"/>
+        <property name="buildroot" value="parser_source"/>
+        <mkdir dir="${buildroot}"/>
+    </target>
+    
+    <target name="javacc" depends="init" if="javacc_home">
+        <echo message="creating parser source..."/>
+        <javacc javacchome="${javacc_home}" target="FormulaGrammar.jj" forcelacheck="true" static="false" outputdirectory="${buildroot}"/>
+    </target>
+
+    <target name="clean" depends="init" description="Clean all build products." >
+        <delete>
+            <fileset dir="${buildroot}" includes="**/*.java"/>
+        </delete> 
+    </target>
+
+</project>
+

@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=gb2312">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.3  (Win32)">
+	<META NAME="AUTHOR" CONTENT="JiHsian Lee">
+	<META NAME="CREATED" CONTENT="20070212;11094839">
+	<META NAME="CHANGEDBY" CONTENT="JiHsian Lee">
+	<META NAME="CHANGED" CONTENT="20080523;14150757">
+	<META NAME="CHANGEDBY" CONTENT="JiHsian Lee">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm }
+		P { margin-bottom: 0.2cm; line-height: 150% }
+		P.western { font-size: 14pt }
+		P.cjk { font-size: 14pt }
+		P.ctl { font-size: 12pt }
+		TH P { margin-bottom: 0.2cm; line-height: 150% }
+		TH P.western { font-size: 14pt }
+		TH P.cjk { font-size: 14pt }
+		TH P.ctl { font-size: 12pt }
+		TD P { margin-bottom: 0.2cm; line-height: 150%; text-align: center }
+		TD P.western { font-size: 14pt }
+		TD P.cjk { font-size: 14pt }
+		TD P.ctl { font-size: 12pt }
+		H2.western { font-family: "Albany", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-family: "HG Mincho Light J"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-size: 14pt; font-style: italic }
+		H1 { text-align: center }
+		H1.cjk { font-size: 24pt }
+		H1.ctl { font-size: 12pt }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="zh-CN" DIR="LTR">
+<H1 LANG="zxx" CLASS="cjk"><FONT FACE="Andale Sans UI, sans-serif"><FONT SIZE=6><SPAN LANG="en-US"><B>Help
+on Formula</B></SPAN></FONT></FONT></H1>
+<H2 CLASS="cjk"><FONT FACE="Albany, sans-serif"><SPAN LANG="en-US">The
+input and output variables of each module:</SPAN></FONT></H2>
+<UL>
+	<LI><P CLASS="cjk"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">The
+	input of each module is named 
+	<IMG SRC="help_html_3dfce033.gif" NAME="对象1" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=16 HEIGHT=18>,
+	and according to the number of input signals, the input variables
+	are named 
+	<IMG SRC="help_html_70188f8e.gif" NAME="对象2" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=99 HEIGHT=20>.
+	When writing the formula for the module, you use the variable names
+	u1, u2, u3, etc.</SPAN></FONT></P>
+	<LI><P CLASS="cjk"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">The
+	output of each module is named 
+	<IMG SRC="help_html_2225143e.gif" NAME="对象11" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=17 HEIGHT=18>,
+	and according to the number of input signals, the input variables
+	are named 
+	<IMG SRC="help_html_m5e6f6689.gif" NAME="对象10" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=103 HEIGHT=20>.
+	When writing the formula for the module, you use the variable names
+	y1, y2, y3, etc.  For example, if the output 
+	<IMG SRC="help_html_m6d2d4c40.gif" NAME="对象12" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=22 HEIGHT=20>
+	of a module is related to its input signals as 
+	<IMG SRC="help_html_2f6cf8d1.gif" NAME="对象13" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=124 HEIGHT=20>,
+	then you enter the formula as: y3 = sin(u1) * u2 + u3</SPAN></FONT></P>
+	<LI><P CLASS="cjk"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">The
+	state of a dynamic module is named 
+	<IMG SRC="help_html_m6d950436.gif" NAME="对象14" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=16 HEIGHT=18>,
+	and according to the order of the dynamic module, the state
+	variables are named 
+	<IMG SRC="help_html_4e9646f5.gif" NAME="对象15" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=80 HEIGHT=20>.
+	When writing the formula for the module, you use the state variable
+	names x1, x2, x3, etc.  For example, for the Van der Pol equation 
+	<IMG SRC="help_html_m672db49f.gif" NAME="对象16" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=171 HEIGHT=43></SPAN></FONT></P>
+</UL>
+<P CLASS="cjk" STYLE="margin-left: 2.5cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">the
+1st State Equation is : f1 = x2. </SPAN></FONT>
+</P>
+<P CLASS="cjk" STYLE="margin-left: 2.5cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">The
+2<SUP>nd</SUP> State Equation is: f2 = -0.2*(x1 ** 2 &ndash; 1) * x2
+** 2 &ndash; x1</SPAN></FONT></P>
+<P CLASS="cjk" STYLE="margin-left: 1.25cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">The
+order of a Dynamic module may be different from its inputer number or
+output number.</SPAN></FONT></P>
+<H2 LANG="zxx" CLASS="cjk"><FONT FACE="Albany, sans-serif"><SPAN LANG="en-US">Operators
+to be used in the formulas:</SPAN></FONT></H2>
+<CENTER>
+	<TABLE WIDTH=302 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+		<COL WIDTH=142>
+		<COL WIDTH=142>
+		<TR VALIGN=TOP>
+			<TH WIDTH=142>
+				<P CLASS="cjk"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">Name</SPAN></FONT></P>
+			</TH>
+			<TH WIDTH=142>
+				<P CLASS="cjk"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">Symbol</SPAN></FONT></P>
+			</TH>
+		</TR>
+		<TR>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">addition</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">+</SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">subtraction</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">-</SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">multiply</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">*</SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">divide</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">/</SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">power</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">**</SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">AND</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">&amp;</SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">OR</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">|</SPAN></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">XOR</SPAN></FONT></P>
+			</TD>
+			<TD WIDTH=142>
+				<P CLASS="cjk" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">^</SPAN></FONT></P>
+			</TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<H2 LANG="zxx" CLASS="cjk"><FONT FACE="Albany, sans-serif"><SPAN LANG="en-US">Usable
+Standard Mathematic Functions:</SPAN></FONT></H2>
+<P CLASS="cjk"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">abs,
+acos, asin, atan, atan2, cbrt, ceil, copySign, cos, cosh, exp, expm1,
+floor, getExponent, hypot, IEEEremainder, log, log10, log1p, max,
+min, nextAfter, nextUp, pow, rint, round, signum, sin, sinh, sqrt,
+tan, tanh, toDegrees, toRadians, ulp</SPAN></FONT></P>
+<P CLASS="cjk"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">On
+the usages of the above functions, please refer to the <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Math.html">Math
+class documentation</A>.</SPAN></FONT></SPAN></FONT></P>
+<H2 LANG="zxx" CLASS="cjk"><FONT FACE="Albany, sans-serif"><SPAN LANG="en-US"><FONT FACE="Albany, sans-serif"><SPAN LANG="en-US">The
+following functions are define by <A HREF="http://202.201.18.40:8080/mas5/labs/home.jsp?id=7">us</A>:</SPAN></FONT></SPAN></FONT></H2>
+<H3 LANG="zxx"><FONT FACE="Thorndale, serif"><SPAN LANG="en-US">deadZone</SPAN></FONT></H3>
+<P CLASS="cjk" STYLE="margin-left: 1.25cm"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">usage:
+<IMG SRC="help_html_5f9e0c54.gif" NAME="对象3" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=123 HEIGHT=21 BORDER=0>,
+where</SPAN></FONT></P>
+<P CLASS="cjk" STYLE="margin-left: 2.5cm"><IMG SRC="help_html_m2e6e6dbb.gif" NAME="对象4" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=17 HEIGHT=21 BORDER=0><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">represents
+the half width of the dead zone, and </SPAN></FONT></SPAN></FONT>
+</P>
+<P CLASS="cjk" STYLE="margin-left: 2.5cm"><IMG SRC="help_html_7ad7f89c.gif" NAME="对象5" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=13 HEIGHT=21 BORDER=0><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">is
+the variable of the function.</SPAN></FONT></SPAN></FONT></P>
+<H3 LANG="zxx"><FONT FACE="Thorndale, serif"><SPAN LANG="en-US">Saturation</SPAN></FONT></H3>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: 1.25cm; margin-bottom: 0cm">
+<FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">usage: 
+<IMG SRC="help_html_m4159e1bd.gif" NAME="对象6" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=147 HEIGHT=21 BORDER=0>,
+where</SPAN></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: 2.5cm; margin-bottom: 0cm">
+<IMG SRC="help_html_20be14e1.gif" NAME="对象7" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=17 HEIGHT=21 BORDER=0><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">is
+the slope of the linear part of the function,</SPAN></FONT></SPAN></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: 2.5cm; margin-bottom: 0cm">
+<IMG SRC="help_html_m2a8452e5.gif" NAME="对象8" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=17 HEIGHT=21 BORDER=0><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">is
+the limit of the linear part, and</SPAN></FONT></SPAN></FONT></P>
+<P CLASS="cjk" ALIGN=LEFT STYLE="margin-left: 2.5cm; margin-bottom: 0cm">
+<IMG SRC="help_html_7ad7f89c.gif" NAME="对象9" ALIGN=ABSMIDDLE HSPACE=8 WIDTH=13 HEIGHT=21 BORDER=0><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">is
+the variable of the function.</SPAN></FONT></SPAN></FONT></P>
+<P CLASS="cjk"><BR><BR>
+</P>
+<H2 LANG="zxx" CLASS="cjk"><FONT FACE="Albany, sans-serif"><SPAN LANG="en-US">Good
+Luck!</SPAN></FONT></H2>
+<P CLASS="cjk"><BR><BR>
+</P>
+<P CLASS="cjk"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><FONT FACE="Times New Roman, serif"><FONT SIZE=4 STYLE="font-size: 15pt"><SPAN LANG="en-US"><B><A HREF="http://202.201.18.40:8080/mas5/labs/home.jsp?id=7">JiHsian
+Lee</A> </B></SPAN></FONT></FONT></SPAN></FONT>
+</P>
+<P CLASS="cjk"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">2008-5-8
+</SPAN></FONT>
+</P>
+<P CLASS="cjk"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><A HREF="http://www.lzjtu.cn/"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">Lanzhou
+Jiaotong University</SPAN></FONT></A></SPAN></FONT></P>
+</BODY>
+</HTML>
